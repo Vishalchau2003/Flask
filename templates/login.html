@@ -1,0 +1,48 @@
+]
+{% extends "base.html" %}
+{% block title %}
+
+    Login Page
+
+{% endblock %}
+
+{% block content %}
+
+    <!-- Form starts here -->
+
+    <form action="#" method="post">
+
+        <!-- action="#" means form submits to same page -->
+
+        <!-- method="post" means data is sent securely in request body -->
+        <!-- Used when sending form data like username/password -->
+
+
+        <p>Name:</p>
+
+
+        <p>
+
+            <!-- type="text" creates textbox -->
+
+            <!-- name="nm" is VERY important -->
+            <!-- Flask uses this name to access entered data -->
+
+            <!-- In Flask:
+                 request.form["nm"]
+                 gets value typed here
+            -->
+
+            <input type="text" name="nm" />
+
+        </p>
+
+
+        <p>
+            <input type="submit" value="submit"/>
+
+        </p>
+
+    </form>
+
+{% endblock %}
